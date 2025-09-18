@@ -220,18 +220,21 @@ class _AppShellState extends State<AppShell> {
                                         mainAxisSize: MainAxisSize.min,
                                         children: <Widget>[
                                           ListTile(
+                                            contentPadding: EdgeInsets.symmetric(horizontal: 16, vertical: 0), // reduce vertical space
                                             leading: const Icon(Icons.settings_outlined),
                                             title: const Text('Settings'),
                                             onTap: () => handle('settings'),
                                           ),
-                                          const Divider(height: 1, indent: 16, endIndent: 16),
+                                          // const Divider(height: 1, indent: 16, endIndent: 16),
                                           ListTile(
+                                            contentPadding: EdgeInsets.symmetric(horizontal: 16, vertical: 0),
                                             leading: const Icon(Icons.verified_user_outlined),
                                             title: const Text('Your data in Fylix'),
                                             onTap: () => handle('your_data'),
                                           ),
-                                          const Divider(height: 1, indent: 16, endIndent: 16),
+                                          // const Divider(height: 1, indent: 16, endIndent: 16),
                                           ListTile(
+                                            contentPadding: EdgeInsets.symmetric(horizontal: 16, vertical: 0),
                                             leading: const Icon(Icons.help_outline),
                                             title: const Text('Help and feedback'),
                                             onTap: () => handle('help_feedback'),
